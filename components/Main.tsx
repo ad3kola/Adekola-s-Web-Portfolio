@@ -70,7 +70,7 @@ function Main() {
           </div>
           <div className="w-full flex items-center justify-center mx-auto mt-14 space-x-5">
             <a
-              href="https://drive.google.com/file/d/1GbP8_DosQ0dw05KSeZQKNQVL5_lzuZQn/view?usp=drive_link"
+              href="https://drive.google.com/file/d/1GbP8_DosQ0dw05KSeZQKNQVL5_IzuZQn/view?usp=drive_link"
               target="_blank"
             >
               <button className="px-4 md:w-44 flex-shrink-0 rounded-md h-12 bg-dark text-gray-100 capitalize tracking-wide duration-200 transition transform ease-in-out hover:scale-[1.03]">
