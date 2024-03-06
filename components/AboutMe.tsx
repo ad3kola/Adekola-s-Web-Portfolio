@@ -20,7 +20,6 @@ function AboutMe() {
       const data = await fetchOverviewData();
       setSkillsContent(skillsData);
       setContent(data[0]);
-      console.log(skillsData)
     };
     fetchData();
   }, []);
@@ -47,7 +46,7 @@ function AboutMe() {
     <>
       <section
         id="about"
-        className="w-full flex bg-gray-100 flex-col items-center justify-center max-w-7xl mx-auto relative mt-10 px-8 md:px-10 py-5"
+        className="w-full flex bg-gray-100 flex-col rounded-md items-center justify-center max-w-7xl mx-auto relative mt-10 px-8 md:px-10 py-5"
       >
         <div className="grid grid-cols-1 lg:grid-cols-2 md:gap-8 gap-14 mt-8 md:mt-14 w-full p-5 md:px-16 z-10 place-content-center">
           <motion.div
@@ -75,14 +74,13 @@ function AboutMe() {
             </div>
           </motion.div>
           <div className="flex flex-col w-full max-w-4xl px-2">
-            <h3 className="capitalize ml-7 text-xl text-dark font-bold tracking-wider">
+            <motion.h3 initial={{opacity: 0}} animate={{opacity: 1}} transition={{duration: 1}}  className="capitalize ml-7 text-xl text-dark font-bold tracking-wider">
               Skills
-            </h3>
+            </motion.h3>
             <motion.div
-              viewport={{ once: true }}
               variants={container}
-              initial="hidden"
-              whileInView="visible"
+              initial={{opacity: 0}}
+              whileInView={{opacity: 1}}
               className="flex gap-x-6 gap-y-4 items-center mt-7 flex-wrap"
             >
               {skillsContent?.map((skill, indx) => (

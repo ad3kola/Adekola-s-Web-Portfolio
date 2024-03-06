@@ -63,20 +63,23 @@ function Project({ project, projectNo, totalProjects }: Props) {
           {project?.project}
         </h3>
         {project?.softwares && (
-          <motion.div viewport={{ once: true }}
-          variants={container}
-          initial="hidden"
-          whileInView="visible" className="flex py-2 items-center mt-2 mx-auto justify-center space-x-2">
+          <motion.div
+            viewport={{ once: true }}
+            variants={container}
+            initial="hidden"
+            whileInView="visible"
+            className="flex py-2 items-center mt-2 mx-auto justify-center space-x-2"
+          >
             {project?.softwares?.map((software, indx) => (
               <motion.div key={indx} variants={showFromDown} className="flex">
-              <Image
-                key={indx}
-                src={urlFor(software).url()}
-                alt="software"
-                className="rounded-full object-contain"
-                width={30}
-                height={30}
-              />
+                <Image
+                  key={indx}
+                  src={urlFor(software).url()}
+                  alt="software"
+                  className="rounded-full object-contain"
+                  width={30}
+                  height={30}
+                />
               </motion.div>
             ))}
           </motion.div>
@@ -88,7 +91,7 @@ function Project({ project, projectNo, totalProjects }: Props) {
           viewport={{ once: true }}
           className="flex items-center justify-center space-x-3 mt-3"
         >
-          <Link href={`${project?.githubURL}`}>
+          <a href={`${project?.githubURL}`} target="_blank">
             <motion.button
               initial={{ x: -50, opacity: 0.2 }}
               whileInView={{ x: 0, opacity: 1 }}
@@ -99,8 +102,8 @@ function Project({ project, projectNo, totalProjects }: Props) {
               Open Github
               <ArrowUpRightIcon className="w-[14px] h-[14px] text-gray-200 ml-2" />
             </motion.button>
-          </Link>
-          <Link href={`${project?.projectlink}`}>
+          </a>
+          <a href={`${project?.projectlink}`} target="_blank">
             <motion.button
               initial={{ x: 50, opacity: 0.2 }}
               viewport={{ once: true }}
@@ -111,7 +114,7 @@ function Project({ project, projectNo, totalProjects }: Props) {
               Go to Site{" "}
               <ArrowUpRightIcon className="w-[14px] h-[14px] text-gray-200 ml-2" />
             </motion.button>
-          </Link>
+          </a>
         </motion.div>
       </motion.div>
     </div>

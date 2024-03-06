@@ -6,7 +6,7 @@ function Footer() {
   return (
     <footer className ='bg-dark w-full text-gray-100 p-3 mt-3 pb-1'>
       <div className="flex flex-col w-full pt-3 pb-2">
-        <div className ='flex items-center justify-between'>
+        <div className ='flex items-center justify-between px-2'>
           <div className="flex flex-col flex-shrink-0 space-x-3 items-center">
             <Image
               src={"/assets/my-profile-picture-transparent-bg.png"}
@@ -15,7 +15,7 @@ function Footer() {
               height={50}
               className="object-contain rounded-full"
             />
-            <span className="text-base mt-2 text-gray-100 tracking-wider font-black">
+            <span className="text-base mt-3 text-gray-100 tracking-wider font-black">
               ADEKOLA ADEDEJI
             </span>
           </div>
@@ -30,7 +30,7 @@ function Footer() {
             </div>
           </div>
         </div>
-        <h3 className ='text-sm text-center mt-10 overline'>&copy; Copyrights 2024. All Rights Reserved</h3>
+        <h3 className ='text-sm text-center mt-12 overline'>&copy; Copyrights 2024. All Rights Reserved</h3>
       </div>
     </footer>
   );

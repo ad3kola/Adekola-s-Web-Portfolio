@@ -22,8 +22,7 @@ function Projects() {
         Projects
       </h3>
       <p className ='text-3xl mt-2 font-bold text-dark tracking-wider text-center'>Featuring my top builds and creations till date</p>
-      <div className="absolute top-1/2 -translate-x-1/2 left-1/2 -translate-y-1/2 h-80 md:h-[400px] w-full bg-purple-800/20 -skew-y-12 -z-10" />
-      <div className="p-5 md:py-8 h-full mt-5 flex flex-col items-center space-y-12 max-w-7xl w-full">
+      <div className="p-5 md:py-8 h-full mt-5 flex flex-col items-center space-y-12 max-w-7xl w-full mx-auto">
         {content?.map((project, indx) => (
           <Project key={indx} projectNo={indx} totalProjects={content?.length} project={project} />
         ))}
