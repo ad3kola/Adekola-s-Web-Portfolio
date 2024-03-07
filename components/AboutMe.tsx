@@ -79,8 +79,8 @@ function AboutMe() {
             </motion.h3>
             <motion.div
               variants={container}
-              initial={{opacity: 0}}
-              whileInView={{opacity: 1}}
+              initial='hidden'
+              whileInView='visible'
               className="flex gap-x-6 gap-y-4 items-center mt-7 flex-wrap"
             >
               {skillsContent?.map((skill, indx) => (
