@@ -8,7 +8,7 @@ import Footer from "@/components/Footer";
 
 export default function Home() {
   return (
-    <main className="bg-gray-50 scroll-smooth scrollbar-hide overflow-hidden">
+    <main className="bg-gray-50 scroll-smooth scrollbar-hide overflow-y-scroll">
       <Navbar />
       <Main />
       <AboutMe />
