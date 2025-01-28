@@ -1,11 +1,15 @@
 import { useState, useEffect } from "react";
 
-function ScrollPositionY(): number {
-  const [scrollHeight, setScrollHeight] = useState<number>(0);
+function useScrollPercent(): number {
+  const [scrollPercent, setScrollPercent] = useState<number>(0);
 
   useEffect(() => {
     const handleScroll = () => {
-      setScrollHeight(window.scrollY); // Update scroll height on scroll event
+      const totalHeight = document.documentElement.scrollHeight - window.innerHeight;
+      const currentHeight = window.scrollY;
+      const percent = ((currentHeight / totalHeight) * 100).toFixed(0);
+
+      setScrollPercent(Number(percent)); // Update the scroll percentage state
     };
 
     // Attach the scroll event listener
@@ -17,7 +21,7 @@ function ScrollPositionY(): number {
     };
   }, []); // Empty array ensures the effect runs only once when the component mounts
 
-  return scrollHeight; // Return the updated scroll position
+  return scrollPercent; // Return the scroll percentage
 }
 
-export default ScrollPositionY;
+export default useScrollPercent;

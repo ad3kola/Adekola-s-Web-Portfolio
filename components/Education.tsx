@@ -1,23 +1,30 @@
 import { schoolHistory } from "@/utils/data";
+import { AcademicCapIcon } from "@heroicons/react/24/solid";
 
 function Education() {
   return (
     <section id="education" className="mt-20 dark:bg-dark bg-gray-200 w-full">
-<div className="w-full h-16 flex items-center justify-center">
-  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 2880 320" className="w-full h-full">
-    <path
-      fill="currentColor" // Fill the wave with the current color
-      className="text-black dark:text-gold" // Black in light mode, gold in dark mode
-      d="M0,192L96,186.7C192,181,384,171,576,160C768,149,960,128,1152,106.7C1344,85,1536,64,1728,80C1920,96,2112,128,2304,128C2496,128,2688,96,2784,80L2880,64V0H0Z"
-    ></path>
-  </svg>
-</div>
+      <div className="w-full h-16 flex items-center justify-center">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 2880 320"
+          className="w-full h-full"
+        >
+          <path
+            fill="currentColor" // Fill the wave with the current color
+            className="text-black dark:text-gold" // Black in light mode, gold in dark mode
+            d="M0,192L96,186.7C192,181,384,171,576,160C768,149,960,128,1152,106.7C1344,85,1536,64,1728,80C1920,96,2112,128,2304,128C2496,128,2688,96,2784,80L2880,64V0H0Z"
+          ></path>
+        </svg>
+      </div>
 
-
-      <h3 className="text-center text-3xl font-bold mt-10">My Education</h3>
+      <h3 className="text-3xl font-bold mt-10 flex items-center justify-center">
+        My Education
+        <AcademicCapIcon className=" ml-4 h-8 w-8" />{" "}
+      </h3>
 
       <div className="relative px-4 py-16 mx-auto w-full grid md:grid-cols-2 gap-x-12 gap-y-8 max-w-6xl">
-        <span className="absolute left-1/2 top-1/2 -translate-y-1/2 -translate-x-1/2 h-[88%] w-1 bg-dark dark:bg-gold " />
+        <span className="absolute left-1/2 top-1/2 -translate-y-1/2 -translate-x-1/2 sm:h-[88%] w-1 bg-dark dark:bg-gold " />
         {/* 1st Year */}
         <div
           className={`relative flex flex-col w-full py-5 px-4 text-dark dark:text-white dark:border border-dark border-2 dark:border-gold rounded-md shadow-lg text-right`}

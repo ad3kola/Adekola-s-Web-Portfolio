@@ -19,7 +19,7 @@ function Projects() {
       id="projects"
       className="relative w-full bg-gray-100 dark:bg-dark flex flex-col items-center p-5 mt-8"
     >
-<div className="w-full h-16 flex items-center justify-center mt-10">
+<div className="w-full h-16 flex items-center justify-center mt-10 rotate-180">
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 120" className="w-full h-full">
     <path
       fill="currentColor"
@@ -30,7 +30,7 @@ function Projects() {
 </div>
 
 
-      <h3 className="capitalize text-2xl text-center text-dark dark:text-gray-200 font-bold tracking-wider capitailze">
+      <h3 className="capitalize text-2xl text-center text-dark dark:text-gray-200 font-bold tracking-wider capitailze mt-24">
         Projects
       </h3>
       <p className="text-3xl mt-2 font-bold text-dark dark:text-gold tracking-wider text-center">

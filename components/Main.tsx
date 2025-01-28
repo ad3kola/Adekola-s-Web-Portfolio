@@ -59,17 +59,7 @@ function Main() {
                 </Link>
               ))}
           </div>
-          <div className="w-full flex items-center justify-evenly mt-6">
-            {socialLinks
-              ?.slice(socialLinks.length / 2, socialLinks.length)
-              .map(({ Icon, name, path }, id) => (
-                <Link href={`${path}`} key={id}>
-                  <div className="bg-dark/95 p-3 shadow-md rounded-xl duration-200 transition transform ease-in-out hover:scale-125 cursor-pointer border dark:border-gold">
-                    <Icon className="h-6 w-6 text-gray-200 dark:text-gold" />
-                  </div>
-                </Link>
-              ))}
-          </div>
+          
           <div className="w-full flex items-center justify-center mx-auto mt-14 space-x-5">
             <a
               href="https://drive.google.com/file/d/1GbP8_DosQ0dw05KSeZQKNQVL5_IzuZQn/view?usp=drive_link"

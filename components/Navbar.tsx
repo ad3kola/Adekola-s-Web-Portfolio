@@ -11,24 +11,13 @@ import { Bars3BottomRightIcon } from "@heroicons/react/24/solid";
 import { usePathname } from "next/navigation";
 import ScrollPositionY from "@/utils/functions/scrollHeight";
 import { Progress } from "./ui/progress";
+import useScrollPercent from "@/utils/functions/scrollHeight";
 
 function Navbar() {
   const currentPath = usePathname();
-const totalHeight = document.documentElement.scrollHeight - window.innerHeight;
-const currentHeight = ScrollPositionY(); // Assuming ScrollPositionY returns a number
-const percent = ((currentHeight / totalHeight) * 100).toFixed(0);
-
-console.log(percent);  // This will give you the scroll percentage
-console.log("totalHeight:", typeof totalHeight, "currentHeight:", typeof currentHeight, "percent:", typeof percent);
+  const scrollPercent = useScrollPercent();
 
 
-  // const scrollPositionY = useScrollPosition().toFixed(0);
-  
-    // Explicitly type maxWebHeight as a number
-    // const maxWebHeight: number = document.documentElement.scrollHeight - window.innerHeight;
-  
-    // Calculate the percentage of scroll position relative to the total height
-    // const scrollPositionYPercent = maxWebHeight > 0 ? (scrollPositionY / maxWebHeight) * 100 : 0;
 
   return (
     <motion.header
@@ -50,7 +39,7 @@ console.log("totalHeight:", typeof totalHeight, "currentHeight:", typeof current
         ))}
         <span
   className={`bg-white dark:bg-gold absolute bottom-0 left-0 rounded h-1`}
-  style={{ width: `${percent}%` }}
+  style={{ width: `${scrollPercent}%` }}
 />
 
         </div>
