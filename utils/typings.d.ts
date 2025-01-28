@@ -1,11 +1,45 @@
 import { SVGProps } from "react";
 import {PortableTextBlock} from 'sanity'
+import { LucideProps } from "lucide-react";
+import { ForwardRefExoticComponent, RefAttributes } from "react";
+import { IconType } from "react-icons/lib";
+
+export interface HeaderIcons {
+  Icon: ForwardRefExoticComponent<
+    Omit<LucideProps, "ref"> & RefAttributes<SVGSVGElement>
+  >;
+  path: string;
+  color?: string;
+}
+
+export interface SocialLinks {
+  Icon: IconType;
+  link: string;
+}
+
+export interface SchoolHistory {
+  schoolName: string;
+  startDate: number;
+  finishDate: number;
+  educationLevel: string;
+  overview: string;
+  order: string;
+}
+
+export interface AllProjects {
+  projectImage: string;
+  projectName: string;
+  techStack: [{}];
+  projectWebsiteLink: string;
+  projectGithubLink: string;
+  projectDescription: string;
+}
 
 export type LinkProps = {
   name: string;
   Icon: ForwardRefExoticComponent<
     Omit<SVGProps<SVGSVGElement>, "ref">
-  >;
+  > | IconType;
   path?: string;
 };
 

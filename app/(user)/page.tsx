@@ -5,17 +5,23 @@ import Experience from "@/components/Experience";
 import Projects from "@/components/Projects";
 import ContactMe from "@/components/ContactMe";
 import Footer from "@/components/Footer";
+import Education from "@/components/Education";
+import { ModeToggle } from "@/utils/components/ModeToggle";
+import Image from "next/image";
 
 export default function Home() {
   return (
-    <main className="bg-gray-50 scroll-smooth scrollbar-hide overflow-y-scroll">
+    <main className="dark:bg-dark bg-gray-200 scroll-smooth relative scrollbar-hide overflow-y-scroll">
       <Navbar />
       <Main />
       <AboutMe />
-      {/* <Experience /> */}
+      <Education />
       <Projects />
       <ContactMe />
       <Footer />
-  </main>
+      <div className="fixed top-10 right-10 z-50">
+        <ModeToggle />
+      </div>
+    </main>
   );
 }

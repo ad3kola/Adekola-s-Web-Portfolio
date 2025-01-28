@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "@/styles/globals.css";
+import { ThemeProvider } from "@/utils/components/ThemeProvider";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -16,8 +17,13 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" className ='scroll-smooth'>
-      <body className={`bg-gray-50 scroll-smooth scrollbar-hide overflow-y-scroll ${inter.className}`}>
-     {children}</body>
+      <body className={`scroll-smooth scrollbar-hide overflow-y-scroll ${inter.className}`}>
+      <ThemeProvider
+            attribute="class"
+            defaultTheme="system"
+            enableSystem
+            disableTransitionOnChange
+          >{children}</ThemeProvider></body>
     </html>
   );
 }

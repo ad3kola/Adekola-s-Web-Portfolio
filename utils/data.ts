@@ -1,11 +1,12 @@
 import {
   AcademicCapIcon,
+  BriefcaseIcon,
   CircleStackIcon,
   EnvelopeIcon,
   HomeIcon,
   QuestionMarkCircleIcon,
 } from "@heroicons/react/24/solid";
-import { LinkProps } from "./typings";
+import { LinkProps, SchoolHistory } from "./typings";
 import { FaFacebookF, FaTwitter } from "react-icons/fa";
 import {
   FaGithub,
@@ -25,11 +26,16 @@ export const navLinks: LinkProps[] = [
     Icon: QuestionMarkCircleIcon,
     path: "#about",
   },
-  // {
-  //   name: "Jobs & Education",
-  //   Icon: AcademicCapIcon,
-  //   path: "#experience",
-  // },
+  {
+    name: "Jobs & Education",
+    Icon: AcademicCapIcon,
+    path: "#education",
+  },
+  {
+    name: "Work Experience",
+    Icon: BriefcaseIcon,
+    path: "#briefcase",
+  },
   {
     name: "Projects",
     Icon: CircleStackIcon,
@@ -66,5 +72,44 @@ export const socialLinks: LinkProps[] = [
     name: "Instagram",
     Icon: FaInstagram,
     path: "https://www.instagram.com/pos.itiveperspectives?igsh=MWR3MmVmY3pkMGM4",
+  },
+];
+
+export const schoolHistory: SchoolHistory[] = [
+  {
+    schoolName: "Grand Regal Int'l School",
+    startDate: 2010,
+    finishDate: 2020,
+    educationLevel: "Primary School",
+    overview:
+      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Sitdoloribus sed fuga iusto incidunt assumenda ea, reprehenderit atdeleniti earum. Dolores delectus quibusdam saepe hic omnis rerumiste sit voluptatem?",
+    order: 'col-start-1'
+    },
+  {
+    schoolName: "Grand Regal Int'l School",
+    startDate: 2020,
+    finishDate: 2022,
+    educationLevel: "High School",
+    order: 'col-start-3',
+    overview:
+      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores delectus quibusdam saepe hic omnis rerumiste sit voluptatem?",
+  },
+  {
+    schoolName: "National Open University of Nigeria (NOUN)",
+    startDate: 2022,
+    finishDate: 2023,
+    educationLevel: "University",
+    order: 'col-start-1',
+    overview:
+      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit doloribus sed fuga iusto incidunt assumenda ea, reprehenderit atdeleniti earum. Dolores delectus quibusdam saepe hic omnis rerum",
+  },
+  {
+    schoolName: "Holland College",
+    startDate: 2024,
+    finishDate: 2026,
+    educationLevel: "Univeristy (Diploma) ",
+    order:'col-start-3',
+    overview:
+      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Sitdoloribus sed fuga iusto incidunt assumenda ea, reprehenderit atdeleniti earum. Dolores delectus quibusdam saepe hic omnis rerumiste sit voluptatem?",
   },
 ];

@@ -5,7 +5,7 @@ import { urlFor } from "@/sanity.cli";
 function Skill({ skill }: { skill: SkillsProps }) {
   return (
     <>
-      <div className="flex items-center justify-between rounded-md space-x-2 bg-dark/90 text-sm px-3 sm:px-4 py-2">
+      <div className="flex items-center justify-between rounded-md space-x-2 bg-dark dark:bg-dark dark:border-gray-200 dark:border text-gray-200 text-sm px-3 sm:px-4 py-2">
         <div className="w-7 h-7 relative">
           {skill?.logo && (
             <Image
@@ -16,7 +16,7 @@ function Skill({ skill }: { skill: SkillsProps }) {
             />
           )}
         </div>
-        <p className="text-gray-100 tracking-wider font-semibold capitalize">
+        <p className="tracking-wider font-semibold capitalize">
           {skill?.title}
         </p>
       </div>

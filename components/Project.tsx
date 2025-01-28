@@ -59,7 +59,7 @@ function Project({ project, projectNo, totalProjects }: Props) {
         viewport={{ once: true }}
         className="flex flex-col items-center justify-center text-center max-w-4xl w-full px-3 md:px-6"
       >
-        <h3 className="text-xl uppercase tracking-wide font-black text-dark">
+        <h3 className="text-xl uppercase tracking-wide font-black text-dark dark:text-gray-200">
           {project?.project}
         </h3>
         {project?.softwares && (
@@ -84,7 +84,7 @@ function Project({ project, projectNo, totalProjects }: Props) {
             ))}
           </motion.div>
         )}
-        <h4 className="text-[13px]/6 line-clamp-6 text-center text-dark/80 font-medium tracking-wider mt-1">
+        <h4 className="text-[13px]/6 line-clamp-6 text-center text-dark/80 dark:text-gray-200 font-medium tracking-wider mt-1">
           {project?.overview}
         </h4>
         <motion.div
@@ -97,10 +97,10 @@ function Project({ project, projectNo, totalProjects }: Props) {
               whileInView={{ x: 0, opacity: 1 }}
               viewport={{ once: true }}
               transition={{ duration: 0.5 }}
-              className="w-40 flex items-center justify-center font-medium py-3 rounded-sm bg-dark text-white hover:scale-105 cursor-pointer border-none outline-none duration-200 ease-in-out"
+              className="w-40 flex items-center justify-center font-medium py-3 rounded-sm bg-dark dark:bg-gold dark:text-dark dark:font-bold text-white hover:scale-105 cursor-pointer border-none outline-none duration-200 ease-in-out"
             >
               Open Github
-              <ArrowUpRightIcon className="w-[14px] h-[14px] text-gray-200 ml-2" />
+              <ArrowUpRightIcon className="w-[14px] h-[14px] text-gray-200 dark:text-dark ml-2" />
             </motion.button>
           </a>
           <a href={`${project?.projectlink}`} target="_blank">
@@ -112,7 +112,7 @@ function Project({ project, projectNo, totalProjects }: Props) {
               className=" w-40 flex items-center justify-center font-medium py-3 rounded-sm bg-purple-600 text-white hover:scale-105 cursor-pointer border-none outline-none duration-200 ease-in-out"
             >
               Go to Site{" "}
-              <ArrowUpRightIcon className="w-[14px] h-[14px] text-gray-200 ml-2" />
+              <ArrowUpRightIcon className="w-[14px] h-[14px] text-gray-200 dark:text-dark ml-2" />
             </motion.button>
           </a>
         </motion.div>

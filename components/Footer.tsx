@@ -9,7 +9,7 @@ function Footer() {
         <div className ='flex items-center justify-between px-2'>
           <div className="flex flex-col flex-shrink-0 space-x-3 items-center">
             <Image
-              src={"/assets/my-profile-picture-transparent-bg.png"}
+              src={"/assets/my-profile-picture.jpg"}
               alt="my-image"
               width={50}
               height={50}
