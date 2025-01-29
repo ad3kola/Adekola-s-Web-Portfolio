@@ -80,12 +80,12 @@ function AboutMe() {
             </p>
             <div className="flex items-center space-x-2 mt-4">
               <Link href="#contact">
-                <button className="w-40 py-3 font-medium rounded-sm bg-dark dark:bg-gold text-gold dark:text-dark dark:font-bold">
+                <button className="w-40 py-3 font-medium rounded-sm bg-dark dark:bg-gold text-gray-100 dark:text-dark dark:font-bold">
                   Let's Talk
                 </button>
               </Link>
               <Link href="#contact">
-                <button className="h-12 w-14 p-2 flex items-center justify-center font-medium rounded-sm bg-dark dark:bg-gold text-gold dark:text-dark">
+                <button className="h-12 w-14 p-2 flex items-center justify-center font-medium rounded-sm bg-dark dark:bg-gold text-gray-100 dark:text-dark">
                   <EnvelopeIcon className="w-6 h-6 " />
                 </button>
               </Link>
