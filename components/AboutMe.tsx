@@ -80,7 +80,7 @@ function AboutMe() {
             </p>
             <div className="flex items-center space-x-2 mt-4">
               <Link href="#contact">
-                <button className="w-40 py-3 font-medium rounded-sm bg-dark dark:bg-[#FFD700] text-gold dark:text-dark dark:font-bold">
+                <button className="w-40 py-3 font-medium rounded-sm bg-dark dark:bg-gold text-gold dark:text-dark dark:font-bold">
                   Let's Talk
                 </button>
               </Link>
