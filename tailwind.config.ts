@@ -23,7 +23,7 @@ const config: Config = {
         levitate: "levitate 3s ease-in-out infinite",
       },
       colors: {
-        gold: "#0ea5e9",
+        gold: "#FFD700",
         dark: "#0d0d0d",
         background: "hsl(var(--background))",
         foreground: "hsl(var(--foreground))",
