@@ -24,12 +24,12 @@ function Education() {
       </h3>
 
       <div className="relative px-4 py-16 mx-auto w-full grid md:grid-cols-2 gap-x-12 gap-y-8 max-w-6xl">
-        <span className="absolute left-1/2 top-1/2 -translate-y-1/2 -translate-x-1/2 sm:h-[88%] w-1 bg-dark dark:bg-gold " />
+        <span className="absolute left-1/2 top-1/2 -translate-y-1/2 -translate-x-1/2 md:h-[88%] w-1 bg-dark dark:bg-gold " />
         {/* 1st Year */}
         <div
           className={`relative flex flex-col w-full py-5 px-4 text-dark dark:text-white dark:border border-dark border-2 dark:border-gold rounded-md shadow-lg text-right`}
         >
-          <h4 className="relative after:absolute after:h-5 dark:text-gold font-extrabold after:w-5 after:bg-dark dark:after:bg-gold after:z-40 after:-right-[51px] after:top-1/2 after:-translate-y-1/2 after:rounded-full">
+          <h4 className="relative after:md:absolute after:h-5 dark:text-gold font-extrabold after:w-5 after:bg-dark dark:after:bg-gold after:z-40 after:-right-[51px] after:top-1/2 after:-translate-y-1/2 after:rounded-full">
             {2010} - {2020} | Primary School
           </h4>
           <h3 className="text-xl font-semibold uppercase">
@@ -48,7 +48,7 @@ function Education() {
         <div
           className={`relative flex flex-col w-full py-5 px-4 text-dark dark:text-white dark:border border-dark border-2 dark:border-gold rounded-md shadow-lg`}
         >
-          <h4 className="text-lg font-bold relative after:absolute after:h-5 after:w-5 after:bg-dark dark:after:bg-gold dark:text-gold after:z-40 after:-left-[51px] after:top-1/2 after:-translate-y-1/2 after:rounded-full">
+          <h4 className="text-lg font-bold relative after:md:absolute after:h-5 after:w-5 after:bg-dark dark:after:bg-gold dark:text-gold after:z-40 after:-left-[51px] after:top-1/2 after:-translate-y-1/2 after:rounded-full">
             {2020} - {2022} | High School
           </h4>
           <h3 className="text-xl font-semibold uppercase">
@@ -63,7 +63,7 @@ function Education() {
         <div
           className={`relative flex flex-col w-full py-5 px-4 text-dark dark:text-white dark:border border-dark border-2 dark:border-gold rounded-md shadow-lg text-right`}
         >
-          <h4 className="text-lg font-bold relative after:absolute after:h-5 after:w-5 after:bg-dark dark:after:bg-gold dark:text-gold after:z-40 after:-right-[51px] after:top-1/2 after:-translate-y-1/2 after:rounded-full">
+          <h4 className="text-lg font-bold relative after:md:absolute after:h-5 after:w-5 after:bg-dark dark:after:bg-gold dark:text-gold after:z-40 after:-right-[51px] after:top-1/2 after:-translate-y-1/2 after:rounded-full">
             {2022} - {2023} | University
           </h4>
           <h3 className="text-xl font-semibold">
@@ -81,7 +81,7 @@ function Education() {
         <div
           className={`relative flex flex-col w-full py-5 px-4 text-dark dark:text-white dark:border border-dark border-2 dark:border-gold rounded-md shadow-lg`}
         >
-          <h4 className="text-lg font-bold relative after:absolute after:h-5 after:w-5 after:bg-dark dark:after:bg-gold after:z-40 after:-left-[51px] after:top-1/2 after:-translate-y-1/2 after:rounded-full dark:text-gold">
+          <h4 className="text-lg font-bold relative after:md:absolute after:h-5 after:w-5 after:bg-dark dark:after:bg-gold after:z-40 after:-left-[51px] after:top-1/2 after:-translate-y-1/2 after:rounded-full dark:text-gold">
             {2024} - {2026} | Univeristy (Diploma)
           </h4>
           <h3 className="text-xl font-semibold">Holland College</h3>

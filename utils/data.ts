@@ -32,11 +32,6 @@ export const navLinks: LinkProps[] = [
     path: "#education",
   },
   {
-    name: "Work Experience",
-    Icon: BriefcaseIcon,
-    path: "#briefcase",
-  },
-  {
     name: "Projects",
     Icon: CircleStackIcon,
     path: "#projects",

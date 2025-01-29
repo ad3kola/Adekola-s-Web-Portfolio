@@ -99,7 +99,7 @@ function Project({ project, projectNo, totalProjects }: Props) {
               transition={{ duration: 0.5 }}
               className="w-40 flex items-center justify-center font-medium py-3 rounded-sm bg-dark dark:bg-gold dark:text-dark dark:font-bold text-white hover:scale-105 cursor-pointer border-none outline-none duration-200 ease-in-out"
             >
-              Open Github
+               Github Code
               <ArrowUpRightIcon className="w-[14px] h-[14px] text-gray-200 dark:text-dark ml-2" />
             </motion.button>
           </a>

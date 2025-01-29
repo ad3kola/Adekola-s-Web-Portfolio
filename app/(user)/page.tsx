@@ -5,12 +5,12 @@ import Experience from "@/components/Experience";
 import Projects from "@/components/Projects";
 import ContactMe from "@/components/ContactMe";
 import Education from "@/components/Education";
-import { ModeToggle } from "@/utils/components/ModeToggle";
 import ScrollToTop from "@/utils/functions/scrollToTop";
+import { ToggleMode } from "@/utils/components/ToggleMode";
 
 export default function Home() {
   return (
-    <main className="dark:bg-dark bg-gray-200 scroll-smooth mb-40 relative scrollbar-hide overflow-y-scroll">
+    <main className="dark:bg-dark bg-gray-200 scroll-smooth mb-40 relative scrollbar-hide overflow-y-scroll overflow-x-hidden">
       <Navbar />
       <Main />
       <AboutMe />
@@ -18,10 +18,10 @@ export default function Home() {
       <Projects />
       <ContactMe />
       {/* <Footer /> */}
-      <div className="fixed top-10 right-10 z-50">
-        <ModeToggle />
+      <div className="fixed top-10 right-7 z-50">
+        <ToggleMode />
       </div>
-      <div className="fixed top-10 left-10 z-50 ">
+      <div className="fixed bottom-10 left-7 z-50 ">
         <ScrollToTop />
       </div>
     </main>
