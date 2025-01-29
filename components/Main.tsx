@@ -21,7 +21,7 @@ function Main() {
   }, []);
 
   return (
-    <section className="bg-zinc-50 dark:bg-dark relative w-full mx-auto flex flex-col justify-center p-4">
+    <section className="bg-zinc-50 dark:bg-dark relative w-full mx-auto flex flex-col justify-center p-4 py-10">
       <div className="flex flex-col w-full text-center items-center justify-center max-w-5xl mx-auto z-30">
         {/* Profile Picture (optional) */}
         {/* <div className="rounded-full shadow overflow-hidden relative h-52 w-52">
